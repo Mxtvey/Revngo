@@ -1,0 +1,108 @@
+{
+  "sections": [
+    {
+      "key": "topServices",
+      "title": "TOP services",
+      "optionsText": "6 options",
+      "type": "services",
+      "items": [
+        { "key": "has_wifi", "label": "WiFi", "icon": "/jpg/wif.png" },
+        { "key": "has_parking", "label": "Parking lot", "icon": "/jpg/parking.png" },
+        { "key": "has_pool", "label": "Pool", "icon": "/jpg/pool.png" },
+        { "key": "has_wellness", "label": "Wellness", "icon": "/jpg/lotus.png" },
+        { "key": "has_air_conditioning", "label": "Air-conditioning", "icon": "/jpg/air-conditioner.png" },
+        { "key": "has_half_board", "label": "Half-board", "icon": "/jpg/half-board.png" }
+      ]
+    },
+    {
+      "key": "meals",
+      "title": "Meals",
+      "optionsText": "4 options",
+      "type": "checkbox",
+      "items": [
+        { "key": "meal_type:No meals", "label": "No meals" },
+        { "key": "meal_type:Breakfast", "label": "Breakfast included" },
+        { "key": "meal_type:Half board", "label": "Half-board" },
+        { "key": "meal_type:Full board", "label": "Full board" }
+      ]
+    },
+    {
+      "key": "accommodationType",
+      "title": "Accommodation type",
+      "optionsText": "4 options",
+      "type": "checkbox",
+      "items": [
+        { "key": "stars:2", "label": "2 star" },
+        { "key": "stars:3", "label": "3 star" },
+        { "key": "stars:4", "label": "4 star" },
+        { "key": "stars:5", "label": "5 star" }
+      ]
+    },
+    {
+      "key": "rating",
+      "title": "Based on ratings",
+      "optionsText": "3 options",
+      "type": "checkbox",
+      "items": [
+        { "key": "rating:9", "label": "Excellent (9+)" },
+        { "key": "rating:8", "label": "Very good (8+)" },
+        { "key": "rating_text:Excellent", "label": "Excellent text rating" }
+      ]
+    },
+    {
+      "key": "paymentMethods",
+      "title": "Payment methods",
+      "optionsText": "3 options",
+      "type": "checkbox",
+      "items": [
+        { "key": "card:visa.png", "label": "Visa" },
+        { "key": "card:mastercard.png", "label": "MasterCard" },
+        { "key": "payment_policy:payable_on_site", "label": "Pay on site" }
+      ]
+    },
+    {
+      "key": "languages",
+      "title": "Spoken languages",
+      "optionsText": "3 options",
+      "type": "checkbox",
+      "items": [
+        { "key": "language:English", "label": "English" },
+        { "key": "language:Hungarian", "label": "Hungarian" },
+        { "key": "language:German", "label": "German" }
+      ]
+    },
+    {
+      "key": "locationFeatures",
+      "title": "Location features",
+      "optionsText": "4 options",
+      "type": "checkbox",
+      "items": [
+        { "key": "has_air_conditioning", "label": "Air conditioning" },
+        { "key": "has_wifi", "label": "WiFi" },
+        { "key": "has_parking", "label": "On-site parking" },
+        { "key": "has_pool", "label": "Pool" }
+      ]
+    },
+    {
+      "key": "petFriendly",
+      "title": "Pet friendly",
+      "optionsText": "2 options",
+      "type": "checkbox",
+      "items": [
+        { "key": "is_pet_friendly", "label": "Pet friendly" },
+        { "key": "is_kid_friendly", "label": "Kid friendly" }
+      ]
+    },
+    {
+      "key": "priceRange",
+      "title": "Price range",
+      "optionsText": "3 options",
+      "type": "checkbox",
+      "items": [
+        { "key": "price:<100", "label": "Under €100" },
+        { "key": "price:100-200", "label": "€100 - €200" },
+        { "key": "price:>200", "label": "Above €200" }
+      ]
+    }
+  ]
+}
