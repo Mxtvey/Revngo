@@ -1,4 +1,5 @@
-﻿using Revngo.Api.models;
+﻿using System.Collections.Generic;
+using Revngo.Api.models;
 
 namespace Revngo.Api.Data;
 
@@ -140,9 +141,9 @@ public static class DataSeed
     }
 };
 
-    public static List<Tours> Tours = new()
+    public static List<Tour> Tours = new()
     {
-        new Tours
+       new Tour
         {
             Id = 4,
             Name = "Hotel Vinifera Wine & Spa Balatonfüred",
@@ -162,7 +163,7 @@ public static class DataSeed
             IsKidFriendly = true,
             IsPetFriendly = false,
             RatingText = "Excellent",
-            FeaturesJson = null,
+            FeaturesJson = "",
             UsefulInfoJson = "[]",
             CheckinFrom = "15:00",
             CheckinTo = "24:00",
@@ -175,25 +176,25 @@ public static class DataSeed
                 "Local tax: 710 Ft / person / night (1.86 € / person / night) of the reservation value (for guests aged 18), included in the full price and payable on site.(payable on site) ",
             ReceptionHours = "24-hour front desk",
             WellnessHours = "07:30 - 21:30",
+            HasWellness = true,
+            HasAirConditioning = true,
+            HasHalfBoard = false,
+            DescriptionHtml = "",
+            Description =
+                "The Hotel Vinifera Wine & Spa is a five-star wellness hotel located 1,000 m from the Balaton shore in Balatonfüred, a sparkling cultural city on the northern shore of Balaton, where guests can get to know the wine culture and taste of the region in addition to relaxing.",
             AcceptedCards = new List<string>
             {
                 "visa.png",
                 "mastercard.png"
             },
-            HasWellness = true,
-            HasAirConditioning = true,
-            HasHalfBoard = false,
-            DescriptionHtml = null,
-            Description =
-                "The Hotel Vinifera Wine & Spa is a five-star wellness hotel located 1,000 m from the Balaton shore in Balatonfüred, a sparkling cultural city on the northern shore of Balaton, where guests can get to know the wine culture and taste of the region in addition to relaxing.",
             Images = new List<string>
             {
                 "hotels/4.jpg",
                 "hotels/4.1.jpg",
                 "hotels/4.2.jpg"
-            }
+            },
         },
-        new Tours
+        new Tour
         {
             Id = 2,
             Name = "Hotel Golden Lake Resort Balatonfüred",
@@ -213,7 +214,7 @@ public static class DataSeed
             IsKidFriendly = true,
             IsPetFriendly = true,
             RatingText = "Very good",
-            FeaturesJson = null,
+            FeaturesJson = "",
             UsefulInfoJson = "[]",
             CheckinFrom = "15:00",
             CheckinTo = "24:00",
@@ -248,7 +249,7 @@ The outdoor Swim spa jacuzzi is temporarily closed for maintenance.",
                 "hotels/2.2.jpg"
             }
         },
-        new Tours
+        new Tour
     {
         Id = 1,
         Name = "Hotel Margaréta Balatonfüred",
@@ -268,7 +269,7 @@ The outdoor Swim spa jacuzzi is temporarily closed for maintenance.",
         IsKidFriendly = true,
         IsPetFriendly = false,
         RatingText = "Very good",
-        FeaturesJson = null,
+        FeaturesJson =  "",
         UsefulInfoJson = "[{\"label\": \"Bus station\", \"distance\": \"200 m\"}, {\"label\": \"Restaurant\", \"distance\": \"550 m\"}, {\"label\": \"Train station\", \"distance\": \"1 km\"}, {\"label\": \"City center\", \"distance\": \"1.2 km\"}]",
         CheckinFrom = "15:00",
         CheckinTo = "18:00",
@@ -287,7 +288,7 @@ The outdoor Swim spa jacuzzi is temporarily closed for maintenance.",
         HasWellness = false,
         HasAirConditioning = false,
         HasHalfBoard = false,
-        DescriptionHtml = null,
+        DescriptionHtml =  "",
         Description = "The renewed Hotel Margaréta is located in Balatonfüred, directly at the main road Nr.71. Balatonfüred is a popular and continuously developing holiday resort at lake Balaton, next to the wonderful peninsula Tihany.\r\n\r\nTo finalise the booking your are required to pay 50% advance payment of the total amount within 3 days of our confirmation.\r\nIn case of a cancellation up to 14 days prior to arrival may result in a change of the arrival date or in a refund of the deposit after the deduction of a penalty fee of 3.000 HUF.\r\n\r\nTourist tax in 2025: 710 HUF/Person/Night (from 18 years).\r\n\r\nWe draw your attention that bookings for five rooms or more are considered as groop booking...",
         Images = new List<string>
         {
@@ -296,7 +297,7 @@ The outdoor Swim spa jacuzzi is temporarily closed for maintenance.",
             "hotels/1.2.jpg"
         }
     },
-        new Tours
+        new Tour
         {
             Id = 5,
             Name = "Echo Residence All Suite Hotel",
@@ -315,7 +316,7 @@ The outdoor Swim spa jacuzzi is temporarily closed for maintenance.",
             HasPool = true,
             IsKidFriendly = true,
             IsPetFriendly = false,
-            RatingText = null,
+            RatingText =  "",
             FeaturesJson = "{}",
             UsefulInfoJson = "[{\"label\": \"Lake Balaton\", \"distance\": \"150 m\"}, {\"label\": \"Viewpoint\", \"distance\": \"400 m\"}, {\"label\": \"Restaurant\", \"distance\": \"700 m\"}, {\"label\": \"Tihany Benedictine Abbey\", \"distance\": \"1.3 km\"}, {\"label\": \"City center\", \"distance\": \"2 km\"}]",
             CheckinFrom = "14:00",
@@ -335,8 +336,8 @@ The outdoor Swim spa jacuzzi is temporarily closed for maintenance.",
             HasWellness = false,
             HasAirConditioning = false,
             HasHalfBoard = false,
-            DescriptionHtml = null,
-            Description = null,
+            DescriptionHtml =  "",
+            Description =  "",
             Images = new List<string>
             {
                 "hotels/5.jpg",
@@ -344,7 +345,7 @@ The outdoor Swim spa jacuzzi is temporarily closed for maintenance.",
                 "hotels/5.2.jpg"
             }
         },
-        new Tours
+        new Tour
         {
             Id = 3,
             Name = "Anna Grand Hotel Balatonfüred",
@@ -364,7 +365,7 @@ The outdoor Swim spa jacuzzi is temporarily closed for maintenance.",
             IsKidFriendly = true,
             IsPetFriendly = true,
             RatingText = "Excellent",
-            FeaturesJson = null,
+            FeaturesJson =  "",
             UsefulInfoJson = "[]",
             CheckinFrom = "15:00",
             CheckinTo = "00:00",
@@ -383,7 +384,7 @@ The outdoor Swim spa jacuzzi is temporarily closed for maintenance.",
             HasWellness = true,
             HasAirConditioning = true,
             HasHalfBoard = true,
-            DescriptionHtml = null,
+            DescriptionHtml =  "",
             Description = "105 comfortably furnished rooms are offered by Anna Grand Hotel Balatonfüred to guests looking for accommodation in Balatonfüred...",
             Images = new List<string>
             {
@@ -392,7 +393,7 @@ The outdoor Swim spa jacuzzi is temporarily closed for maintenance.",
                 "hotels/3.2.jpg"
             }
         },
-        new Tours
+        new Tour
         {
             Id = 9,
             Name = "Forest Hills Wellness & Spa",
@@ -412,7 +413,7 @@ The outdoor Swim spa jacuzzi is temporarily closed for maintenance.",
             IsKidFriendly = true,
             IsPetFriendly = true,
             RatingText = "Exceptional",
-            FeaturesJson = null,
+            FeaturesJson =  "",
             UsefulInfoJson = "[]",
             CheckinFrom = "15:00",
             CheckinTo = "21:00",
@@ -431,7 +432,7 @@ The outdoor Swim spa jacuzzi is temporarily closed for maintenance.",
             HasWellness = true,
             HasAirConditioning = true,
             HasHalfBoard = true,
-            DescriptionHtml = null,
+            DescriptionHtml =  "",
             Description = "Boutique wellness hotel in a quiet forest area. Large spa, indoor and outdoor pools, half-board included.",
             Images = new List<string>
             {
@@ -440,7 +441,7 @@ The outdoor Swim spa jacuzzi is temporarily closed for maintenance.",
                 "hotels/9.2.jpg"
             }
         },
-        new Tours
+        new Tour
         {
             Id = 10,
             Name = "Balaton Plaza Apartments",
@@ -460,7 +461,7 @@ The outdoor Swim spa jacuzzi is temporarily closed for maintenance.",
             IsKidFriendly = true,
             IsPetFriendly = false,
             RatingText = "Very good",
-            FeaturesJson = null,
+            FeaturesJson =  "",
             UsefulInfoJson = "[]",
             CheckinFrom = "14:00",
             CheckinTo = "20:00",
@@ -479,7 +480,7 @@ The outdoor Swim spa jacuzzi is temporarily closed for maintenance.",
             HasWellness = false,
             HasAirConditioning = true,
             HasHalfBoard = false,
-            DescriptionHtml = null,
+            DescriptionHtml =  "",
             Description = "Apartment-style accommodation with kitchenettes and balcony. Close to the beach and promenade.",
             Images = new List<string>
             {
@@ -488,7 +489,7 @@ The outdoor Swim spa jacuzzi is temporarily closed for maintenance.",
                 "hotels/10.2.jpg"
             }
         },
-        new Tours
+        new Tour
         {
             Id = 6,
             Name = "Hotel Blaha Lujza Balatonfüred",
@@ -508,7 +509,7 @@ The outdoor Swim spa jacuzzi is temporarily closed for maintenance.",
             IsKidFriendly = true,
             IsPetFriendly = false,
             RatingText = "Very good",
-            FeaturesJson = null,
+            FeaturesJson =  "",
             UsefulInfoJson = "[]",
             CheckinFrom = "15:00",
             CheckinTo = "18:00",
@@ -527,7 +528,7 @@ The outdoor Swim spa jacuzzi is temporarily closed for maintenance.",
             HasWellness = true,
             HasAirConditioning = true,
             HasHalfBoard = false,
-            DescriptionHtml = null,
+            DescriptionHtml =  "",
             Description = "Renovated hotel near lake Balaton. Big garden pool, wellness area and bar. Popular choice for families and couples.",
             Images = new List<string>
             {
@@ -536,7 +537,7 @@ The outdoor Swim spa jacuzzi is temporarily closed for maintenance.",
                 "hotels/6.2.jpg"
             }
         },
-        new Tours
+        new Tour
         {
             Id = 7,
             Name = "Silver Lake Resort",
@@ -556,7 +557,7 @@ The outdoor Swim spa jacuzzi is temporarily closed for maintenance.",
             IsKidFriendly = true,
             IsPetFriendly = true,
             RatingText = "Fabulous",
-            FeaturesJson = null,
+            FeaturesJson =  "",
             UsefulInfoJson = "[]",
             CheckinFrom = "14:00",
             CheckinTo = "20:00",
@@ -571,7 +572,7 @@ The outdoor Swim spa jacuzzi is temporarily closed for maintenance.",
             HasWellness = true,
             HasAirConditioning = true,
             HasHalfBoard = false,
-            DescriptionHtml = null,
+            DescriptionHtml =  "",
             Description = "Lakefront resort with outdoor pool, sauna and spacious rooms. Good option for longer stays and families with kids.",
             Images = new List<string>
             {
@@ -579,7 +580,7 @@ The outdoor Swim spa jacuzzi is temporarily closed for maintenance.",
                 "hotels/7.1.jpg",
                 "hotels/7.2.jpg"
             }
-        },new Tours
+        },new Tour
         {
             Id = 8,
             Name = "Sunrise Marina Hotel",
@@ -599,7 +600,7 @@ The outdoor Swim spa jacuzzi is temporarily closed for maintenance.",
             IsKidFriendly = false,
             IsPetFriendly = false,
             RatingText = "Very good",
-            FeaturesJson = null,
+            FeaturesJson =  "",
             UsefulInfoJson = "[]",
             CheckinFrom = "13:00",
             CheckinTo = "19:00",
@@ -618,7 +619,7 @@ The outdoor Swim spa jacuzzi is temporarily closed for maintenance.",
             HasWellness = false,
             HasAirConditioning = true,
             HasHalfBoard = false,
-            DescriptionHtml = null,
+            DescriptionHtml = "",
             Description = "Smaller hotel next to the marina. Simple but clean rooms with breakfast included.",
             Images = new List<string>
             {
